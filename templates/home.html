@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jovian-careers</title>
+    <style>
+      h1{
+        font-size:40px;
+        font-family:Roboto;
+        font-weight:normal;
+        color:rgb(50,50,50);
+        text-align:center;
+      }
+      #banner {
+        width:100%;
+      height:360px
+      }
+      h2{
+        font-size:32px;
+        font-family:Roboto;
+        color:rgb(100,100,100);
+        text-align:center;
+        font-weight:normal;
+      }
+      .bodytext{
+        font-family:Roboto;
+        color:rgb(100,100,100);
+      }
+      #container{
+        max-width:720px;
+        margin:0,auto,0,auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+   <h1>JOVIAN CAREERS</h1>
+    <img id="banner"src="static/p1.jpeg">
+    <h2>About jovain</h2>
+    <p class="bodytext">At the heart of every great change is a great human. Every day our People of Change are doing incredible things by working together to pursue our shared purpose–to deliver on the promise of technology and human ingenuity.Come be part of our team with Accenture India careers – bring your ideas, ingenuity and determination to make a difference, and we’ll solve some of the world’s biggest challenges. Across industries and around the globe, we work with exceptional people and leading companies—using advanced technologies, data and AI to create 360° value for our clients, people and communities.Join us and help our clients become the next and best versions of themselves.</p>
+    <h2>Open Position</h2>
+    
+      {% for job in jobs %}
+     {% include 'jobitem.html' %}
+      {% endfor %}
+    
+    <div style="text-align-center;">
+      
+    <button>Contact us </button>
+      <p>CopyRight 2022</p>
+    </div>
+      
+  </div>
+  </body>
+</html>
